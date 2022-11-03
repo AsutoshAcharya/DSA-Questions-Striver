@@ -9,8 +9,9 @@ class Solution
             return;
         }
         
-        //Tail recursion
+        //Tail   recursion
         printNos(N-1);
+        
         System.out.print(N+" ");
     }
 }

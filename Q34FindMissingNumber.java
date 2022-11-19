@@ -23,8 +23,7 @@ class Compute {
           for(int j=0;j<A.length;j++){
               
              if(A[j]!=i){
-                 count++;
-                 
+                 count++;                
              }            
           }
            if(count==A.length){

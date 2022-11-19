@@ -24,6 +24,5 @@ public class Q33FindNumberIn2DArray {
                 }
             }
             return find;
-        }
-   
+        }   
 }

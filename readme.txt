@@ -20,3 +20,4 @@
 #Day 20:-Completed 2 array questions
 #Day 21:-cheat day
 #Day 22:-Completed 2 array questions
+#Day 23:-did 2 medium array problems

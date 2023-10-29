@@ -42,3 +42,8 @@ continuing after 1 month
 #Day61:- 04.01.2023:-  did 1 medium array question
 #day62:-cheat day
 #Day63:-did 1 qn
+
+----------------------------------------
+//Starting after a decade :) 29.10.2023
+----------------------------------------
+Day-1:-refreshing pattern qns

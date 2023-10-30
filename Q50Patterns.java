@@ -5,9 +5,8 @@ public class Q50Patterns {
         Scanner scanner = new Scanner(System.in);
         int input = scanner.nextInt();
         patternClass pattern = new patternClass();
-        // pattern.pattern1(input);
-        // pattern.pattern2(input);
-        pattern.pattern3(input);
+
+        pattern.pattern7(input);
         scanner.close();
     }
 
@@ -50,6 +49,66 @@ public class Q50Patterns {
                     if (j == i)
                         System.out.print("\n");
                 }
+            }
+        }
+
+        public void pattern4(int n) {
+            // 1
+            // 2 2
+            // 3 3 3
+
+            for (int i = 1; i <= n; i++) {
+                for (int j = 1; j <= i; j++) {
+                    System.out.print(i + " ");
+                    if (j == i)
+                        System.out.print("\n");
+                }
+            }
+        }
+
+        public void pattern5(int n) {
+            // * * *
+            // * *
+            // *
+            for (int i = n; i > 0; i--) {
+                for (int j = i; j > 0; j--) {
+                    System.out.print("* ");
+
+                }
+                System.out.println("\n");
+            }
+        }
+
+        public void pattern6(int n) {
+            // 1 2 3
+            // 1 2
+            // 1
+            for (int i = n; i > 0; i--) {
+                for (int j = 1; j <= i; j++) {
+                    System.out.print(j + " ");
+
+                }
+                System.out.println("\n");
+            }
+        }
+
+        public void pattern7(int n) {
+            // ----*
+
+            // ---***
+
+            // --*****
+
+            // -*******
+
+            // *********
+            for (int i = 1; i <= n; i++) {
+                String spaces = "-".repeat(n - i);
+                System.out.print(spaces);
+                for (int j = 1; j <= 2 * i - 1; j++) {
+                    System.out.print("*");
+                }
+                System.out.println("\n");
             }
         }
     }

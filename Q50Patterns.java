@@ -6,7 +6,7 @@ public class Q50Patterns {
         int input = scanner.nextInt();
         patternClass pattern = new patternClass();
 
-        pattern.pattern7(input);
+        pattern.pattern9(input);
         scanner.close();
     }
 
@@ -110,6 +110,55 @@ public class Q50Patterns {
                 }
                 System.out.println("\n");
             }
+        }
+
+        public void pattern8(int n) {
+
+            for (int i = n; i >= 1; i--) {
+                String spaces = "-".repeat(n - i);
+                System.out.print(spaces);
+                for (int j = 1; j <= 2 * i - 1; j++) {
+                    System.out.print("*");
+                }
+                System.out.println("\n");
+            }
+        }
+
+        public void pattern9(int n) {
+            for (int i = 1; i <= n; i++) {
+                String spaces = "-".repeat(n - i);
+                System.out.print(spaces);
+                for (int j = 1; j <= 2 * i - 1; j++) {
+                    System.out.print("*");
+                }
+                System.out.println("\n");
+            }
+            for (int i = n; i >= 1; i--) {
+                String spaces = "-".repeat(n - i);
+                System.out.print(spaces);
+                for (int j = 1; j <= 2 * i - 1; j++) {
+                    System.out.print("*");
+                }
+                System.out.println("\n");
+            }
+
+            // String lineSeparator = System.lineSeparator(); // Platform-independent line
+            // separator
+            // StringBuilder sb = new StringBuilder();
+
+            // for (int i = 1; i <= n; i++) {
+            // sb.append("-".repeat(n - i));
+            // sb.append("*".repeat(2 * i - 1));
+            // sb.append(lineSeparator);
+            // }
+
+            // for (int i = n - 1; i >= 1; i--) {
+            // sb.append("-".repeat(n - i));
+            // sb.append("*".repeat(2 * i - 1));
+            // sb.append(lineSeparator);
+            // }
+
+            // System.out.print(sb.toString());
         }
     }
 
